@@ -175,7 +175,7 @@ nav a:hover {
     
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1 .box2 .box3 .box4 .box5 .box6 .box7 .box8 .box9 .box 10 {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -184,6 +184,10 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.teal {
+    background-color: teal;
 }
 
 .bottom-content {
