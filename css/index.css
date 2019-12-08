@@ -75,49 +75,48 @@ p {
 }
 
 .header {
-    height: 90vh;
-    padding: 80px;
     background: black;
     height: 90vh;
 }
 
-.header-img {
-    /* border: 5px solid blue; */
-}
 
-.header .nav-links {
-    width: 100%;
-    background-color: white;
+.links {
+    width: 90%;
+    padding-bottom: 1%;
     display: flex;
-    justify-content: space-between;
-    height: 200px;
-    font-size: 62.5%;
-}
-
-.logo, .header-img {
-    /* height: 12vh; */
+    justify-content: space-around;
+    align-items: flex-end;
+    color: black;
 }
 
 .logo {
-    display: flex;
-    width: 20%;
+    margin-right: 50px;
+    margin-left: -40px;
 }
 
-.logo img {
-    max-width: 100%;
+.logo-about {
+    margin-right: 50px;
+    margin-left: -40px;
 }
 
 .nav {
     margin: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.links {
-    width: 60%;
+/* .nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+} */
+
+.links-about {
+    width: 90%;
+    padding-bottom: 1%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     color: black;
 }
 
@@ -129,11 +128,19 @@ p {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: red;
+
+.links-about a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 
+nav a:hover {
+    color: red;
+}
 
 .top-content {
     margin-top: 5%;
@@ -144,15 +151,39 @@ nav a:hover {
     border-bottom: 1px dashed black;
 }
 
+.top-content-about {
+    margin-top: 5%;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
-.middle-content {
-    margin-bottom: 20px;
+.top-content-about .text-content-about {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+/* CODE FOR MIDDLE-CONTENT */
+
+.text-content-plan {
+    width: 365px;
+    margin-right: 20px;
     border-bottom: 1px dashed black;
+    margin-top: 5px;
+}
+
+.text-content-working {
+    margin-top: 5px;
+    border-bottom: 1px dashed black;
+    width: 365px;
+    margin-left: 20px;
+    padding-bottom: 3%;
 }
 
 .middle-content h2 {
@@ -160,11 +191,38 @@ nav a:hover {
     margin-bottom: 0;
 }
 
+.middle-content-about {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 1%;
+}
+
+.middle-img {
+    margin-bottom: 5%;
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 12px;
+    margin-top: 5%;
+}
+
+/* .middle-content-about .text-content-plan button {
+    display: flex;
+    justify-content: center;
+} */
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* align-content: flex-end; */
 }
 
 .middle-content .boxes .box {
@@ -289,6 +347,8 @@ nav a:hover {
 }
 
 
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -303,9 +363,63 @@ nav a:hover {
     padding-right: 0;
 }
 
+.bottom-content-about {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 1%;
+}
+
+.text-content-office {
+    width: 365px;
+    margin-right: 20px;
+    border-bottom: 1px dashed black;
+    margin-top: 5px;
+}
+
+
+.text-content-meeting {
+    margin-top: 5px;
+    border-bottom: 1px dashed black;
+    width: 365px;
+    margin-left: 20px;
+    padding-bottom: 3%;
+}
+
+.bottom-content-about .text-content-office button {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-img {
+    margin-bottom: 5%;
+}
+
+.bottom-content-together .text-content-about {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.bottom-content-together {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px; 
+    margin-left: 1%;
+}
+
+
+
+
 footer {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; */
     width: 100%;
     background: black;
+    display: flex;
+    justify-content: flex-start;
 }
 
 footer nav {
@@ -320,4 +434,6 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    /* display: flex;
+    justify-content: ; */
 }
