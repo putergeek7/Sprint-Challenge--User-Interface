@@ -3,60 +3,155 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 0 auto;
 }
 
-html, body {
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -66,12 +161,78 @@ p {
     line-height: 1.4;
 }
 
+
+/* ============================ HOME ====================================== */
+
+ /* === CODE FOR CONTAINER - HOME and ABOUT ===== --> */
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+
+
+/* ======== CODE FOR HEADER ============= */
+
+.header {
+    background-color: black;
+    height: 90vh;
+}
+
+
+/* ========= CODE FOR LOGO - HOME ======== */
+
+.logo {
+    margin-right: 50px;
+    margin-left: -40px;
+}
+
+
+/* ==== CODE FOR NAVIGATION - HOME and ABOUT ==== */
+
+.nav {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    border-left: none;
+    border-right: none;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* hover over links and changes color to red - home and about */
+nav a:hover {
+    color: red;
+}
+
+
+/* ====== CODE FOR LINKS - HOME ===== */
+
+.links-home {
+    width: 90%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: black;
+}
+
+.links-home a:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* ==== CODE FOR TOP-CONTENT - HOME ==== */
+
+
+/* container for both future and past paragraphs */
 .top-content {
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -79,32 +240,45 @@ p {
     border-bottom: 1px dashed black;
 }
 
+
+/* container for each paragraph future and past */
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
 
+/* ====== CODE FOR MIDDLE-CONTENT ====== */
+
+/* middle content - home */
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
+
+/* code for both images on first row - about */
+.middle-img {
+    margin-bottom: 5%;
+}
+
+
+/* gives box shadow and lift effect */
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border-bottom: 1px dashed black;
 }
 
-.middle-content .boxes .box {
+/* ======= BOX COLORS ======= */
+
+/* teal box */
+.box1 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,23 +286,181 @@ p {
     justify-content: center;
 }
 
+/* hover - box shadow, gives illusion box rises from page */
+.box1:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* gold box */
+.box2 {
+    width: 12.5%;
+    height: 100px;
+    background-color: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box2:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* cadet blue box */
+.box3 {
+    width: 12.5%;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box3:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* coral box */
+.box4 {
+    width: 12.5%;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box4:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* crimson box */
+.box5 {
+    width: 12.5%;
+    height: 100px;
+    background-color: crimson;
+    color: white;
+    margin: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box5:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* forest green box */
+.box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box6:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* dark orchid box */
+.box7 {
+    width: 12.5%;
+    height: 100px;
+    background-color: darkorchid;
+    color: white;
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box7:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* hot pink box */
+.box8 {
+    width: 12.5%;
+    height: 100px;
+    background-color: hotpink;
+    color: white;
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box8:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* indigo box */
+.box9 {
+    width: 12.5%;
+    height: 100px;
+    background-color: indigo;
+    color: white;
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box9:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* dodger blue */
+.box10 {
+    width: 12.5%;
+    height: 100px;
+    background-color: dodgerblue;
+    color: white;
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover - box shadow, gives illusion box rises from page */
+.box10:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* ======= BOTTOM-CONTENT =========== */
+
+/* container for all divs - that's no moon */
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 2.5% 2% 20px;
     justify-content: space-around;
 }
 
+/* container for each div */
 .bottom-content .text-container {
     padding-right: 4%;
 }
 
+/* container for the moon div */
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
+
+/* ======= CODE FOR FOOTER ======== */
+
 footer {
     width: 100%;
     background: black;
+    display: flex;
+    justify-content: flex-start;
 }
 
 footer nav {
@@ -144,3 +476,160 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* puts a white shadow around the links */
+.footer-links-home a:hover{ box-shadow: 0 3px 35px white; }
+
+
+
+/* ============================== ABOUT PAGE  ================================== */
+
+
+/* logo - about */
+.logo-about {
+    margin-right: 50px;
+    margin-left: -40px;
+}
+
+
+/* ======== CODE FOR LINKS - ABOUT ========== */
+
+
+/* container for all links in nav bar */
+.links-about {
+    width: 90%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: black;
+}
+
+/* code for each & all anchor tags - about */
+.links-about a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.links-about a:hover{ box-shadow: 0 3px 25px #000; }
+
+
+/* ======= CODE FOR TOP CONTENT - ABOUT ======== */
+
+/* top content container - about paragraph - about */
+.top-content-about {
+    margin-top: 5%;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+
+/* === CODE FOR MIDDLE CONTENT - ABOUT AND BUTTONS === */
+
+
+/* first row - strategy */
+.text-content-plan {
+    width: 371px;
+    margin-right: 20px;
+    border-bottom: 1px dashed black;
+    margin-top: 5px;
+}
+
+/* first row - how we work */
+.text-content-working {
+    margin-top: 5px;
+    border-bottom: 1px dashed black;
+    width: 372px;
+    margin-left: 20px;
+    padding-bottom: 3%;
+}
+
+/* second row - places we work */
+.text-content-office {
+    width: 369.25px;
+    margin-right: 20px;
+    border-bottom: 1px dashed black;
+    margin-top: 5px;
+}
+
+/* second row - collaboration */
+.text-content-meeting {
+    margin-top: 5px;
+    border-bottom: 1px dashed black;
+    width: 369.25px;
+    margin-left: 20px;
+    padding-bottom: 3%;
+}
+
+/* second row images - about */
+.bottom-img {
+    margin-bottom: 5%;
+}
+
+/* code for all buttons - about */
+.button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 12px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+/* hover code for all buttons - about - changes color & has shadow effect */
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: lightskyblue;
+}
+
+
+/* container for strategy - first row - about */
+.middle-content-about {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 1%;
+}
+
+
+/* bottom-content - about - container for second row & together */
+.bottom-content-about {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 1%;
+}
+
+
+/*  ====== CODE FOR FOOTER - ABOUT ======= */
+
+/* footer - code for nav-bar - about */
+.footer-about {
+    width: 802px;
+    height: 54px;
+    margin: 10px 0px 0px 551px;
+    border: 1px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* container for links in navbar - about */
+.footer-nav-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+/* puts a white shadow around the links */
+.footer-links-about a:hover{ box-shadow: 0 3px 35px white; }
+
